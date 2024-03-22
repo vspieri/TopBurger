@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View, TouchableOpacity } from "react-native";
 
 export default function Promo({nome,imagem}){
 
@@ -8,7 +8,9 @@ export default function Promo({nome,imagem}){
         </View>
         
         <View style={css.container2}>
+
             <Image style={css.img} source={imagem} />
+
         </View></>
     )
 }

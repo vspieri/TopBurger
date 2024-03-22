@@ -1,27 +1,27 @@
 import React from 'react'
 import { View, FlatList } from 'react-native'
-import LanchesNome from './LanchesNome'
+import ListaBebidas from './ListaBebidas'
 
-const lanches = [
+const listabebidas = [
     {
         id: 1,
-        nome: "X-tadala",
-        imagem: require("../assets/X-TADALA.png")
+        imagem: require("../assets/X-TADALA.png"),
+        nome: "pinga"
     },
     {
         id: 2,
-        nome: "X-Cheddar",
-        imagem: require("../assets/X-cheddar.png")
-    },
+        imagem: require("../assets/X-cheddar.png"),
+        nome: "dsdsadsdas"
+    }
 ]
 
-export default function Lanches() {
+export default function Bebidas() {
     return (
         <View>
             <FlatList
-                data={lanches}
+                data={listabebidas}
                 renderItem={({ item }) =>
-                    <LanchesNome
+                    <ListaBebidas
 
                         nome={item.nome}
                         imagem={item.imagem}
